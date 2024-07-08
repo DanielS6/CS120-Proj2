@@ -1,0 +1,124 @@
+#game-wrapper,
+#letter-usage,
+h1 {
+	margin: auto;
+	width: fit-content;
+}
+
+#guess-table {
+	margin-bottom: 20px;
+}
+
+#guess-table tr,
+#guess-table td {
+	border: 1px solid black;
+}
+
+#guess-table td {
+	width: 70px;
+	height: 70px;
+	font-size: 50px;
+	text-align: center;
+}
+
+.letter-guess--exact {
+	background-color: lime;
+}
+.letter-guess--present {
+	background-color: gold;
+}
+.letter-guess--absent {
+	background-color: lightgray;
+}
+
+#restart-game {
+	margin-left: 30px;
+}
+
+.hidden {
+	display: none;
+}
+
+#popup-wrapper,
+#popup-dialog {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+#popup-wrapper {
+    background-color: #FFFFFFA6;
+}
+#popup-dialog {
+    width: fit-content;
+    max-width: 70%;
+    height: fit-content;
+    margin: auto;
+    border: 1px solid black;
+    padding-top: 5px;
+    background-color: #FFFFFF;
+    font-size: 20px;
+    text-align: center;
+}
+#popup-text {
+    padding: 5px;
+    display: block;
+}
+#popup-wrapper hr {
+    margin-bottom: 0px;
+    border-top: 2px solid black;
+    width: 100%;
+    margin-left: 0px;
+}
+#popup-close-btn {
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    border: none;
+}
+#popup-close-btn:hover {
+    background-color: #e8e8e8;
+    cursor: pointer;
+}
+
+.popup-style--invalid #popup-label {
+	color: red;
+}
+.popup-style--correct #popup-label {
+	color: limegreen;
+}
+.popup-style--stats #popup-text span {
+    display: block;
+}
+
+#letter-usage {
+    margin-top: 20px;
+}
+#letter-usage div {
+    display: flex;
+}
+#letter-usage span {
+    margin: 1px;
+}
+#letter-usage span:not(.letter-usage--spacer) {
+    border: 1px solid black;
+	width: 50px;
+	font-size: 30px;
+	text-align: center;
+    display: inline-block;
+}
+#letter-usage span.letter-usage--spacer {
+    width: 26px;
+}
+
+/* While the site works fine at 600px without extra responsive handling,
+    I should probably include some... */
+@media (max-width: 700px) {
+    #letter-usage span:not(.letter-usage--spacer) {
+        width: 40px;
+    }
+    #letter-usage span.letter-usage--spacer {
+        width: 21px;
+    }
+}

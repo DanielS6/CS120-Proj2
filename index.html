@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project 2</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+
+<h1>Welcome to Wordle!</h1>
+
+<div id="game-wrapper">
+<table id="guess-table">
+	<tbody id="guess-table-body">
+		<!-- Populated by JavaScript -->
+	</tbody>
+</table>
+
+<label for="guess-input">What is your Guess?</label>
+<input type="text" id="guess-input" autofocus>
+<br>
+<br>
+<button id="guess-submit">Check my guess</button>
+<button id="restart-game" class="hidden">New Game</button>
+<br>
+<br>
+<button id="show-stats">Show statistics</button>
+
+</div>
+
+<div id="letter-usage">
+</div>
+
+<div id="popup-wrapper" class="hidden">
+	<div id="popup-dialog">
+		<strong id="popup-label"></strong>
+		<div id="popup-text"></div>
+		<hr>
+		<div id="popup-close-wrapper">
+			<button id="popup-close-btn">Close</button>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
