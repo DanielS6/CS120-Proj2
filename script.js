@@ -199,7 +199,7 @@ class LetterTracker {
 		};
 
 		// each - adds half a cell width of space
-		let rows = [ 'QWERTYUIOP', '-ASDFGHJKL', '--ZXCKBNM' ];
+		let rows = [ 'QWERTYUIOP', '-ASDFGHJKL', '--ZXCVBNM' ];
 		if ( useDvorak ) {
 			rows = [ '-----PYFGCRL', 'AOEUIDHTNS', '---QJKXBMWVZ' ];
 		}
